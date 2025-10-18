@@ -1,9 +1,8 @@
-from cabina_standard import CabinaStandard
-from cabina_animali import CabinaAnimali
-from cabina_deluxe import CabinaDeluxe
+from CabinaStandard import CabinaStandard
+from CabinaAnimali import CabinaAnimali
+from CabinaDeluxe import CabinaDeluxe
 
 from passeggeri import Passeggeri
-
 
 class Crociera:
     def __init__(self, nome):
