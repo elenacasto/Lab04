@@ -14,7 +14,7 @@ class CabinaStandard:
         self._passeggero = passeggero
         self._disponibile = False
 
-    def __repr__(self):
+    def __str__(self):
         stato = "Disponibile" if self._disponibile else "Occupata"
         return f"{self._codice} : Standard |" f"{self._num_letti} letti - Ponte {self._ponte} - Prezzo - {self._prezzo} - Disponibile"
 

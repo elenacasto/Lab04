@@ -11,6 +11,6 @@ class CabinaDeluxe:
     def prezzo(self):
         return self._prezzo * 1.20
 
-    def __repr__(self):
+    def __str__(self):
         stato = "Diposnibile" if self._disponibile else "Occupata"
         return f"{self._codice}: Deluxe | {self._num_letti} letti - Ponte {self._ponte} - Stile cabina: {self._stile_deluxe} - Disponibile"

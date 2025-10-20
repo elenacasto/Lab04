@@ -5,6 +5,6 @@ class Passeggeri:
         self._cognome = cognome
         self._cabina = None
 
-    def __repr__(self):
+    def __str__(self):
         cabina = self._cabina.codice if self._cabina else "Nessuna cabina assegnata"
         return f"{self._codice_passeggero}: {self._nome_passeggero} {self._cognome} - Cabina: {cabina}"

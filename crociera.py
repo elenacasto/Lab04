@@ -82,4 +82,4 @@ class Crociera:
         """Stampa l'elenco dei passeggeri mostrando, per ognuno, la cabina a cui è associato, quando applicabile """
         for passeggero in self._passeggeri:
             cabina_info = f"Cabina: {passeggero.cabina.codice}" if passeggero.cabina else "Nessuna cabina assegnata"
-            print(passeggero)
+            print(f"{passeggero.codice_passeggero}: {passeggero.nome} {passeggero.cognome}, {cabina_info}")
