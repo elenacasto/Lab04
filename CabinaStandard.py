@@ -7,8 +7,17 @@ class CabinaStandard:
         self._disponibile = True
         self._passeggero = None
 
+    @property
     def prezzo(self):
         return self._prezzo
+
+    @property
+    def disponibile(self):
+        return self._disponibile
+
+    @property
+    def codice(self):
+        return self._codice
 
     def assegna_passeggero(self, passeggero):
         self._passeggero = passeggero
@@ -16,7 +25,9 @@ class CabinaStandard:
 
     def __str__(self):
         stato = "Disponibile" if self._disponibile else "Occupata"
-        return f"{self._codice} : Standard |" f"{self._num_letti} letti - Ponte {self._ponte} - Prezzo - {self._prezzo} - Disponibile"
+        return (f"{self._codice} : Standard | {self._num_letti} letti - Ponte {self._ponte} - "
+                f"Prezzo - {self._prezzo} - {stato}")
 
     def __lt__(self, other):
-        return self.prezzo() < other.prezzo()
+        return self.prezzo < other.prezzo
+
