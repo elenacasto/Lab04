@@ -8,16 +8,16 @@ class CabinaStandard:
         self._passeggero = None
 
     @property
+    def codice(self):
+        return self._codice
+
+    @property
     def prezzo(self):
         return self._prezzo
 
     @property
     def disponibile(self):
         return self._disponibile
-
-    @property
-    def codice(self):
-        return self._codice
 
     def assegna_passeggero(self, passeggero):
         self._passeggero = passeggero
