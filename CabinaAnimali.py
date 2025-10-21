@@ -6,6 +6,10 @@ class CabinaAnimali(CabinaStandard):
         self._max_animali = int(max_animali)
 
     @property
+    def codice(self):
+        return self._codice
+
+    @property
     def prezzo(self):
         return self._prezzo * (1 + 0.10 * self._max_animali)
 

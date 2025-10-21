@@ -6,6 +6,10 @@ class CabinaDeluxe(CabinaStandard):
         self._stile_deluxe = stile_deluxe
 
     @property
+    def codice(self):
+        return self._codice
+
+    @property
     def prezzo(self):
         return self._prezzo * 1.20
 
